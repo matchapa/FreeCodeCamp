@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscription Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header" class="header">
+      <h1 id="title">Suscription Survey Form</h1>
+      <p id="description" class="page-description">Subscribe to receive the latest updates via email.</p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Full name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label" for="number">Age: <input id="number" name="number" type="number" min="12" max="120" placeholder="Enter your age (12-120)" /></label>
+        <label id="dropdown-label" for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown" required>
+            <option value="0"> (Select an option)</option>
+            <option value="1"> YouTube Ads</option>
+            <option value="2"> Google Ads</option>
+            <option value="3"> LinkedIn</option>
+            <option value="4"> Friend/family referral</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <div class="radio-area">
+          <p class="radio-description">Would you reccomend us to a friend?</p>
+          <label for="absolutely" class="radio">
+            <input type="radio" name="user-reccomend" id="absolutely" value="absolutely" />
+            Absolutely
+          </label>
+          <label for="probably" class="radio">
+            <input type="radio" name="user-reccomend" id="probably" value="probably" />
+            Probably
+          </label>
+          <label for="not-sure" class="radio">
+            <input type="radio" name="user-reccomend" id="not-sure" value="not-sure" />
+            Not sure
+          </label>
+        </div>
+        <div class="checkbox-area">
+          <p class="checkbox-description">What do you expect from this subscription?</p>
+          <label class="checkbox">
+            <input name="expectations" type="checkbox" value="latest-updates"/>
+            Latest updates
+          </label>
+          <label class="checkbox">
+            <input name="expectations" type="checkbox" value="special-sales" />
+            Special Sales
+          </label>
+          <label class="checkbox">
+            <input name="expectations" type="checkbox" value="upcoming-features" />
+            Unpcoming Features
+          </label>
+          <label class="checkbox">
+            <input name="expectations" type="checkbox" value="experts-analysis" />
+            Expert Analysis
+          </label>
+          <label class="checkbox">
+            <input name="expectations" type="checkbox" value="peoples-opinion" />
+            People's Opinion
+          </label>
+        </div>
+        <div class="textarea-area">
+          <label for="suggestion" class="textarea-description">
+            Any comments or suggestions?
+            <textarea id="suggestion" rows="3" cols="30" placeholder="I'd like to see [company] news..."  ></textarea>
+          </label>
+        </div>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+
+</html>

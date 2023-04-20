@@ -1,0 +1,54 @@
+*{
+    text-align:center;
+  }
+  
+  main{
+    background-color: #CED7E9;
+  }
+  
+  h1{
+    padding: 50 0 0 0;
+  }
+  
+  p{
+    padding: 0 0 30 0;
+    margin:-10;
+  }
+  
+  h1,h2{
+    color:#1E2738;
+  }
+  
+  figure{
+    background-color:#FFFFFF;
+    padding:20px;
+  }
+  figcaption{
+    margin: 10px 0 0;
+  }
+  
+  figure>img{
+    width:100%;
+    height:auto;
+    max-width:100%;
+    object-fit:cover;
+    display:block;
+  }
+  
+  section{
+    padding: 10px 0px;
+  }
+  
+  .timeline-box{
+    width:500px;
+    margin:auto;
+  }
+  
+  li{
+    text-align:left;
+  }
+  
+  h3{
+    font-style:italic;
+    margin-top:10;
+  }

@@ -70,7 +70,7 @@ section{
 
 section div h1{
     color: var(--white);
-    border-top: var(--key-soft) 1px solid;
+    border-top: var(--key-soft) 2px solid;
     padding-top: 20px;
 }
 
